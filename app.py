@@ -89,6 +89,8 @@ def predict_tumor(image, model):
 # Streamlit app layout
 st.title("Brain Tumor Detection")
 
+st.markdown("<h2 style='text-align: center; font-weight: bold;'>PDS DA 2 by 24MAI0091 & 24MAI0070</h2>", unsafe_allow_html=True)
+
 # File upload widget
 uploaded_file = st.file_uploader("Upload a brain MRI image", type=["jpg", "jpeg", "png"])
 
