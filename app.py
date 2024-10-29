@@ -86,10 +86,10 @@ def predict_tumor(image, model):
     severity = "High" if prediction > 0.7 else "Moderate" if prediction > 0.4 else "Low"
     return "Tumor detected" if prediction > 0.5 else "No tumor", severity
 
+st.markdown("<h2 style='text-align: center; font-weight: bold;'>PDS DA 2 by 24MAI0091 & 24MAI0070</h2>", unsafe_allow_html=True)
+
 # Streamlit app layout
 st.title("Brain Tumor Detection")
-
-st.markdown("<h2 style='text-align: center; font-weight: bold;'>PDS DA 2 by 24MAI0091 & 24MAI0070</h2>", unsafe_allow_html=True)
 
 # File upload widget
 uploaded_file = st.file_uploader("Upload a brain MRI image", type=["jpg", "jpeg", "png"])
